@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 1170px;
+}
+
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 130px;
+    font-size: 45px;
+}
+
+/* ----- KYSELY ----- */
+
+.nimi {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-nimi {
+    margin-left: 21px;
+    border: 1px solid black;
+    padding: 4px 4px;
+}
+
+.vierailu {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-vierailu {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 4px 4px;
+    width: 345px;
+}
+
+.kesto {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-kesto {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 4px 4px;
+    width: 345px;
+}
+
+.ikä {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-ikä {
+    margin-left: 149px;
+    border: 1px solid black;
+    padding: 4px 4px;
+}
+
+.required {
+    color: red;
+}
+
+/* ----- PALAUTE ----- */
+
+.maku {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen {
+    margin-left: 75px;
+}
+
+.input-maku {
+    margin-left: 193px;
+    margin-top: 15px;
+}
+
+
+.lämpötila {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen2 {
+    margin-left: 44px;
+}
+
+.input-lämpötila {
+    margin-left: 192px;
+    margin-top: 15px;
+}
+
+
+.ulkonäkö {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen3 {
+    margin-left: 45px;
+}
+
+.input-ulkonäkö {
+    margin-left: 192px;
+    margin-top: 15px;
+}
+
+
+.hinta {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen4 {
+    margin-left: 77px;
+}
+
+.input-hinta {
+    margin-left: 192px;
+    margin-top: 15px;
+}
+
+
+.palvelu {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen5 {
+    margin-left: 63px;
+}
+
+.input-palvelu {
+    margin-left: 192px;
+    margin-top: 15px;
+}
+
+
+/* ----- VAPAA PALAUTE ----- */
+
+.vapaa-palaute {
+    position: absolute;
+    right: 19.9%;
+    bottom: 10%;
+
+}
+
+
+/* ----- YHTEYSTIEDOT ----- */
+
+.yhteystiedot {
+    position: absolute;
+    right: 20%;
+}
+
+.tiedot {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 15px 15px;
+}
+
+.numero {
+    margin-left: 24px;
+    border: 1px solid black;
+    padding: 5px 5px;
+    width: 200px;
+}
+
+.sposti {
+    margin-top: 15px;
+    margin-left: 8px;
+    border: 1px solid black;
+    padding: 5px 5px;
+    width: 200px;
+}
+
+
+
+
+
+label {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+
+/* ----- MOBIILIVERSIO ----- */
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+
+    .vapaa-palaute, .yhteystiedot {
+        display: block;
+        position: relative;
+        margin-left: 160px;
+        margin-top: 30px;
+    }
+
+
+}

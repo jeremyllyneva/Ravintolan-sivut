@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Asiakaspalautelomake</title>
+        <link rel="stylesheet" href="asiakaspalautelomake2.css">
+        <style>
+            * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 1170px;
+}
+
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 130px;
+    font-size: 45px;
+}
+
+/* ----- KYSELY ----- */
+
+.nimi {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-nimi {
+    margin-left: 21px;
+    border: 1px solid black;
+    padding: 4px 4px;
+}
+
+.vierailu {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-vierailu {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 4px 4px;
+    width: 345px;
+}
+
+.kesto {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-kesto {
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 4px 4px;
+    width: 345px;
+}
+
+.ikä {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-ikä {
+    margin-left: 149px;
+    border: 1px solid black;
+    padding: 4px 4px;
+}
+
+.required {
+    color: red;
+}
+
+/* ----- PALAUTE ----- */
+
+.maku {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen {
+    margin-left: 75px;
+}
+
+.input-maku {
+    margin-left: 193px;
+    margin-top: 15px;
+}
+
+
+.lämpötila {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen2 {
+    margin-left: 44px;
+}
+
+.input-lämpötila {
+    margin-left: 192px;
+    margin-top: 15px;
+}
+
+
+.ulkonäkö {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen3 {
+    margin-left: 45px;
+}
+
+.input-ulkonäkö {
+    margin-left: 192px;
+    margin-top: 15px;
+}
+
+
+.hinta {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen4 {
+    margin-left: 77px;
+}
+
+.input-hinta {
+    margin-left: 192px;
+    margin-top: 15px;
+}
+
+
+.palvelu {
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.input-erinomainen5 {
+    margin-left: 63px;
+}
+
+.input-palvelu {
+    margin-left: 192px;
+    margin-top: 15px;
+}
+
+
+/* ----- VAPAA PALAUTE ----- */
+
+.vapaa-palaute {
+    position: absolute;
+    right: 19.9%;
+    bottom: 10%;
+
+}
+
+
+/* ----- YHTEYSTIEDOT ----- */
+
+.yhteystiedot {
+    position: absolute;
+    right: 20%;
+}
+
+.tiedot {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 15px 15px;
+}
+
+.numero {
+    margin-left: 24px;
+    border: 1px solid black;
+    padding: 5px 5px;
+    width: 200px;
+}
+
+.sposti {
+    margin-top: 15px;
+    margin-left: 8px;
+    border: 1px solid black;
+    padding: 5px 5px;
+    width: 200px;
+}
+
+
+
+
+
+label {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+
+/* ----- MOBIILIVERSIO ----- */
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+
+    .vapaa-palaute, .yhteystiedot {
+        display: block;
+        position: relative;
+        margin-left: 160px;
+        margin-top: 30px;
+    }
+
+
+}
+        </style>
+    </head>
+
+    <body>
+
+        <!----- OTSIKKO ----->
+        <h1>Ravintola Lapintaika - Asiakaspalautelomake</h1>
+        <br>
+        <hr>
+        <!----- PALAUTE ----->
+        <div class="kysely">
+
+            <div class="yhteystiedot">
+                <p>Mikäli haluat, että olemme yhteydessä sinuun, jätä yhteystietosi alle.</p>
+                <form class="tiedot">
+                    <label for="pnumero">Puhelinnumero:</label>
+                    <input type="tel" id="pnumero" name="pnumero" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="numero">
+                    <br>
+                    <label for="email">Sähköpostiosoite:</label>
+                    <input type="email" id="email" name="email" class="sposti">
+                </form>
+            </div>
+
+            <div class="vapaa-palaute">
+                <textarea name="vapaa-palaute" id="vapaa-palaute" cols="66" rows="20" placeholder="Tähän voit antaa halutessasi palautetta"></textarea>
+            </div>
+
+            <form class="nimi">
+                <label for="nimi">Nimi (vapaaehtoinen):</label>
+                <input type="text" id="nimi" name="nimi" class="input-nimi">
+            </form>
+
+            <form class="vierailu">
+                <label for="vierailu">Vierailusi päivämäärä:</label><br>
+                <input type="date" id="vierailu" name="vierailu" class="input-vierailu">
+            </form>
+
+            <form class="kesto">
+                <label for="kesto">Kauan jouduit odottomaan annoksen saapumista?</label><br>
+                <input type="time" id="kesto" name="kesto" class="input-kesto">
+            </form>
+
+            <form class="ikä">
+                <label for="ikä">Ikä: <span class="required">*</span></label>
+                <input type="number" id="ikä" name="ikä" min="1" class="input-ikä">
+            </form>
+
+            <div class="palaute">
+
+                <form class="maku">
+                    <label for="maku">Ruoan maku:  <span class="required">*</span></label>
+                    <input type="radio" id="erinomainen" name="maku" value="Erinomainen" class="input-erinomainen">
+                    <label for="maku">Erinomainen</label><br>
+                    <input type="radio" id="hyvä" name="maku" value="Hyvä" class="input-maku">
+                    <label for="maku">Hyvä</label><br>
+                    <input type="radio" id="keskiverto" name="maku" value="Keskiverto" class="input-maku">
+                    <label for="keskiverto">Keskiverto</label><br>
+                    <input type="radio" id="tyydyttävä" name="maku" value="Tyydyttävä" class="input-maku">
+                    <label for="tyydyttävä">Tyydyttävä</label>
+                </form>
+
+                <form class="lämpötila">
+                    <label for="lämpötila">Ruoan lämpötila:  <span class="required">*</span></label>
+                    <input type="radio" id="erinomainen" name="lämpötila" value="Erinomainen" class="input-erinomainen2">
+                    <label for="lämpötila">Erinomainen</label><br>
+                    <input type="radio" id="hyvä" name="lämpötila" value="Hyvä" class="input-lämpötila">
+                    <label for="lämpötila">Hyvä</label><br>
+                    <input type="radio" id="keskiverto" name="lämpötila" value="Keskiverto" class="input-lämpötila">
+                    <label for="lämpötila">Keskiverto</label><br>
+                    <input type="radio" id="tyydyttävä" name="lämpötila" value="Tyydyttävä" class="input-lämpötila">
+                    <label for="lämpötila">Tyydyttävä</label>
+                </form>
+
+                <form class="ulkonäkö">
+                    <label for="ulkonäkö">Ruoan ulkonäkö:  <span class="required">*</span></label>
+                    <input type="radio" id="erinomainen" name="ulkonäkö" value="Erinomainen" class="input-erinomainen3">
+                    <label for="ulkonäkö">Erinomainen</label><br>
+                    <input type="radio" id="hyvä" name="ulkonäkö" value="Hyvä" class="input-ulkonäkö">
+                    <label for="ulkonäkö">Hyvä</label><br>
+                    <input type="radio" id="keskiverto" name="ulkonäkö" value="Keskiverto" class="input-ulkonäkö">
+                    <label for="ulkonäkö">Keskiverto</label><br>
+                    <input type="radio" id="tyydyttävä" name="ulkonäkö" value="Tyydyttävä" class="input-ulkonäkö">
+                    <label for="ulkonäkö">Tyydyttävä</label>
+                </form>
+
+                <form class="hinta">
+                    <label for="hinta">Ruoan hinta:  <span class="required">*</span></label>
+                    <input type="radio" id="erinomainen" name="hinta" value="Erinomainen" class="input-erinomainen4">
+                    <label for="hinta">Erinomainen</label><br>
+                    <input type="radio" id="hyvä" name="hinta" value="Hyvä" class="input-hinta">
+                    <label for="hinta">Hyvä</label><br>
+                    <input type="radio" id="keskiverto" name="hinta" value="Keskiverto" class="input-hinta">
+                    <label for="hinta">Keskiverto</label><br>
+                    <input type="radio" id="tyydyttävä" name="hinta" value="Tyydyttävä" class="input-hinta">
+                    <label for="hinta">Tyydyttävä</label>
+                </form>
+
+                <form class="palvelu">
+                    <label for="palvelu">Palvelun laatu:  <span class="required">*</span></label>
+                    <input type="radio" id="erinomainen" name="palvelu" value="Erinomainen" class="input-erinomainen5">
+                    <label for="palvelu">Erinomainen</label><br>
+                    <input type="radio" id="hyvä" name="palvelu" value="Hyvä" class="input-palvelu">
+                    <label for="palvelu">Hyvä</label><br>
+                    <input type="radio" id="keskiverto" name="palvelu" value="Keskiverto" class="input-palvelu">
+                    <label for="palvelu">Keskiverto</label><br>
+                    <input type="radio" id="tyydyttävä" name="palvelu" value="Tyydyttävä" class="input-palvelu">
+                    <label for="palvelu">Tyydyttävä</label>
+                </form>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
